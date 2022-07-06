@@ -21,10 +21,16 @@ async function fetchAdvice(){
 async function renderAdvice(){
     let data = await fetchAdvice();
     console.log(data.slip.id);
-    loader.classList.remove('display');
-    adv.classList.remove('none');
-    advNum.textContent = data.slip.id;
-    advBody.innerHTML = `"${data.slip.advice}"`;
+    if(data.slip.id != 114 && data.slip.id!= 80){
+        loader.classList.remove('display');
+        adv.classList.remove('none');
+        advNum.textContent = data.slip.id;
+        advBody.innerHTML = `"${data.slip.advice}"`;
+    }
+    else{
+        renderAdvice();
+    }
+
 
 }
 
