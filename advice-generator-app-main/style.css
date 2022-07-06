@@ -42,7 +42,7 @@ picture{
 .advice{
     background-color: var(--DarkGrayishBlue);
     text-align: center;
-    padding: 40px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     min-width: 575px;
     max-width: 375px;
     border-radius: 15px;
@@ -57,7 +57,7 @@ picture{
 }
 
 p,picture,.advice-number{
-    margin-bottom: .75rem;
+    margin-bottom: 1.25rem;
 }
 
 .icon{
@@ -96,7 +96,29 @@ p,picture,.advice-number{
 MOBILE */
 
 @media(max-width: 575px){
+    .container{
+        min-height: 70vh;
+    }
     .advice{
-        min-width: 375px;
+        margin: 0px 10px 0px 10px;
+        min-width: 350px;
+    }
+
+    .icon{
+        animation: breathe 5s linear infinite;
+    }
+
+    @keyframes breathe {
+        0%{
+            box-shadow: 0 0 6px 2px #99ffcc;
+        }
+
+        50%{
+            box-shadow: 0 0 18px 2px #99ffcc;
+        }
+
+        100%{
+            box-shadow: 0 0 6px 2px #99ffcc;
+        }
     }
 }
