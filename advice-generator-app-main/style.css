@@ -19,7 +19,6 @@ body{
  background-color: var(--DarkBlue);
  display: grid;
  place-items: center;
- min-height: 100vh;
  font-family: 'Manrope';
  color: var(--LightCyan);
 }
