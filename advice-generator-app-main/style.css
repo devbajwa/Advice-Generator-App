@@ -42,8 +42,8 @@ picture{
     background-color: var(--DarkGrayishBlue);
     text-align: center;
     padding: 30px 30px 30px 30px;
-    min-width: 575px;
-    max-width: 375px;
+    min-width: 350px;
+    max-width: 575px;
     border-radius: 15px;
     position: relative;
 }
@@ -66,7 +66,6 @@ p,picture,.advice-number{
     position: absolute;
     left: 50%;
     right: 50%;
-    bottom: -10%;
     transform: translateX(-45%);
     cursor: pointer;
     transition: all 0.10s ease-in-out;
@@ -90,6 +89,18 @@ p,picture,.advice-number{
     display: none;
 }
 
+/**
+Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: #b3ffe2;
+  }
+  .seperator {
+    color: var(--LightCyan);
+  }
 
 /**
 MOBILE */
@@ -100,7 +111,7 @@ MOBILE */
     }
     .advice{
         margin: 0px 10px 0px 10px;
-        min-width: 350px;
+        max-width: 375px;
     }
 
     .icon{

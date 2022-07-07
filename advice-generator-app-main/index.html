@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: #b3ffe2;}
-    .seperator {color: var(--LightCyan);}
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="./images/loading.gif" alt="loader" id="loader" class="display">
-    <div class="advice" id="adv">
-     
-      <div class="advice-number">
-        <span>Adivce #</span><span id="advNum">125</span>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Dev Bajwa | Advice generator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./images/loading.gif"
+        alt="loader"
+        id="loader"
+        class="display"
+      />
+      <div class="advice" id="adv">
+        <div class="advice-number">
+          <span>Adivce #</span><span id="advNum">125</span>
+        </div>
+        <p class="advice-body" id="advBody">
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
+          eligendi fuga sit ipsum dolorum molestiae?"
+        </p>
+        <picture>
+          <img
+            src="./images/pattern-divider-desktop.svg"
+            alt="Divider"
+            srcset="
+              ./images/pattern-divider-desktop.svg 444w,
+              ./images/pattern-divider-mobile.svg  295w
+            "
+            sizes="(max-width: 375px) 295px, 444px"
+          />
+        </picture>
+        <img id="dice" class="icon" src="./images/icon-dice.svg" alt="icon" />
       </div>
-      <p class="advice-body" id="advBody">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eligendi fuga sit ipsum dolorum molestiae?"</p>
-      <picture>
-        <img src="./images/pattern-divider-desktop.svg" alt="Divider" srcset="./images/pattern-divider-desktop.svg 444w, ./images/pattern-divider-mobile.svg 295w" sizes="(max-width: 375px) 295px, 444px">
-      </picture>
-      <img id="dice" class="icon" src="./images/icon-dice.svg" alt="icon">
     </div>
- 
-  </div>
-  <div class="attribution">Challenge by <a href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor</a> <span class="seperator"> &mdash; </span> Coded by <a href="https://www.frontendmentor.io/profile/devbajwa" target="_blank">Waqas Naeem Bajwa</a></div>
-
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/home" target="_blank"
+        >Frontend Mentor</a
+      >
+      <span class="seperator"> &mdash; </span> Coded by
+      <a href="https://www.frontendmentor.io/profile/devbajwa" target="_blank"
+        >Waqas Naeem Bajwa</a
+      >
+    </div>
+  </body>
 </html>
