@@ -21,10 +21,18 @@ async function fetchAdvice(){
 async function renderAdvice(){
     let data = await fetchAdvice();
     console.log(data.slip.id);
-    loader.classList.remove('display');
-    adv.classList.remove('none');
-    advNum.textContent = data.slip.id;
-    advBody.innerHTML = `"${data.slip.advice}"`;
+    let restricted = [114,80,181,203];
+    if(restricted.includes(data.slip.id)){
+        console.log(data.slip.id);
+        renderAdvice();
+    }
+    else{
+        loader.classList.remove('display');
+        adv.classList.remove('none');
+        advNum.textContent = data.slip.id;
+        advBody.innerHTML = `"${data.slip.advice}"`;
+    }
+
 
 }
 
